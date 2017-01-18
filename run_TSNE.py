@@ -50,7 +50,7 @@ print("Loading data.")
 
 # Load input and metadata
 df_gene_level_mCH = pd.read_csv(infile, sep="\t")
-metadata = pd.read_csv('metadata_preproc_bins_'+species+'.txt', sep="\t")
+metadata = pd.read_csv('metadata_preproc_bins_'+species+'.eam.txt', sep="\t")
 
 # # Load up reference samples
 # if species == 'mouse':
