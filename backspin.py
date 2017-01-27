@@ -864,9 +864,10 @@ df = pd.read_csv(infile, sep="\t")
 df = df.filter(regex='_mcc$')
 
 # set the seed
+print("seed "+str(seed))
 np.random.seed(seed)
 df = df[np.random.permutation(df.columns)]
-
+print(df.columns)
 
 all_levels = [[df.columns.tolist()]]
 
